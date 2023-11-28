@@ -1,0 +1,5 @@
+.env
+db.sqlite3
+error.log
+debug.log
+memo.txt
