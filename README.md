@@ -28,7 +28,7 @@ Linux、AWS、GCP、Docker
 ライブラリ: Google OAuth
 
 ### エンドポイント
-
+___
 #### /verify-code
 Authorization Code を id_token, access_tokenに変換
 
@@ -43,7 +43,6 @@ https://oauth2.googleapis.com/token にリクエストを送信
 レスポンス:
 - id_token
 - access_token
-
 ___
 #### /verify-token
 id_tokenからGoogleアカウント情報を抽出する
@@ -54,7 +53,6 @@ Googleアカウント情報:
 - メールアドレス
 - ユーザー名
 - アイコン
-
 ___
 #### /register
 ユーザー登録
@@ -66,18 +64,17 @@ image_url: ユーザーアイコン
 
 上記データを元にユーザーモデルを作成
 ※ユーザーモデルの詳細は後述
-
 ___
 #### /get-user-detail
 ユーザー情報取得
 
 ユーザー情報をJSON形式で返す
-
 ___
 #### /user-data-update
 ユーザー情報更新
 
 JSON形式のユーザー情報を元に更新する
+___
 
 ### ユーザーモデル
 #### パラメータ
@@ -90,6 +87,7 @@ JSON形式のユーザー情報を元に更新する
 - is_active : 有効なアカウントか
 - date_joined : 登録日
 
+___
 ### Minecraftアカウント情報について
 MinecraftAccountクラスで管理
 
@@ -115,8 +113,9 @@ Minecraftアカウントのユーザー名ではなく、UUIDで保持する理�
 ユーザー情報取得時は、UUIDをWeb APIでユーザー名に変換して返している。
 
 ユーザー情報更新時は、リクエストメッセージのユーザー名をWeb APIでUUIDに変更して保存している。
+___
 
-## 購入申請のログについて
+### 購入申請のログについて
 Applicationクラスで管理
 
 #### パラメータ
