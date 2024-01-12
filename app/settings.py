@@ -150,7 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # 追加
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", # Reactはport:3000を利用
-    "http://ec.neverland-rpg.online",
+    "https://ec.neverland-rpg.online",
 ]
 
 REST_FRAMEWORK = {

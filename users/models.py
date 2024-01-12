@@ -66,7 +66,7 @@ class Application(models.Model):
 	detail = models.CharField('PaymentDetail', max_length=64, null=True)
 	# 寄付金の用途
 	purpose = models.CharField('Purpose', choices=PURPOSE, max_length=16, null=True)
-	# コンテンツの種類
+	# 申請の種類
 	type = models.CharField('Type', choices=TYPE, max_length=16)
 	# Donator割引
 	donator_discount = models.BooleanField('DonatorDiscount', default=False)
