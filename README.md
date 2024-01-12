@@ -44,6 +44,7 @@ https://oauth2.googleapis.com/token にリクエストを送信
 - id_token
 - access_token
 
+___
 #### /verify-token
 id_tokenからGoogleアカウント情報を抽出する
 
@@ -54,6 +55,7 @@ Googleアカウント情報:
 - ユーザー名
 - アイコン
 
+___
 #### /register
 ユーザー登録
 
@@ -65,11 +67,13 @@ image_url: ユーザーアイコン
 上記データを元にユーザーモデルを作成
 ※ユーザーモデルの詳細は後述
 
+___
 #### /get-user-detail
 ユーザー情報取得
 
 ユーザー情報をJSON形式で返す
 
+___
 #### /user-data-update
 ユーザー情報更新
 
@@ -104,6 +108,7 @@ MinecraftAccountクラスで管理
 
 ※優先接続権とは、サーバーが満員時でも接続可能な権利のこと
 
+___
 #### Minecraftアカウントのユーザー名,UUIDについて
 Minecraftアカウントのユーザー名ではなく、UUIDで保持する理由は、ユーザー名は変更可能でUUIDは一意識別子であるというMinecraftの仕様に基づいている。
 
